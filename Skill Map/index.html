@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+       <h1>My skills</h1>
+       <button class="addBtn">Add Skill</button>
+       <div class= "container">
+           <div class="skills"><div class="html"><span>HTML</span></div></div>
+           <span class="delete">&times;</span>
+       </div>
+       <div class= "container">
+            <div class="skills"><div class="css"><span>CSS</span></div></div>
+            <span class="delete">&times;</span>
+        </div>
+        <div class= "container">
+            <div class="skills"><div class="js"><span>Javascript</span></div></div>
+            <span class="delete">&times;</span>
+       </div>
+       <div class= "container">
+            <div class="skills"><div class="php"><span>PHP</span></div></div>
+            <span class="delete">&times;</span>
+        </div>
+        <div class= "container">
+                <div class="skills"><div class="jquery"><span>JQuery</span></div></div>
+                <span class="delete">&times;</span>
+        </div>
+        <!-- Add skill modal -->
+        <div class="overlay">
+                <div class="modal">
+                    <div class="modal-header">
+                        <span class="headertxt">Add a skill</span>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-container">
+                            <span>Skill Name: </span>
+                            <input id="skillInput" type="text" maxlength="255"></input>
+                        </div>
+                        <div class="text-container">
+                                <span>Expertise(Out of 10): </span>
+                                <input id="expInput" type="number" max="10"></input>
+                        </div>
+                    </div>
+                    <div class="modal-footer row">
+                        <button class="add">Add</button>
+                        <button class="cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.addBtn {
+    background-color: cadetblue;
+    color: rgb(218, 228, 225);
+    width: 10%;
+    height: 30px;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.addBtn:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+}
+.skills {
+    background-color: lightgrey;
+    width: 70%;
+    height: 40%;
+    right: 30;
+    margin-left: 2px;
+}
+.delete {
+    color: cadetblue;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+span{
+   color: white;
+   padding-left: 5px;
+}
+.css {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    animation: movecss 2s linear;
+}
+.js {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: green;
+    animation: movejs 2s linear;
+}
+.php {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    animation: movephp 2s linear;
+}
+.jquery {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    animation: movejquery 2s linear;
+}
+.html {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: purple;
+    animation: movehtml 2s linear;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index:-1;
+    transition: opacity 0.6s;
+}
+.modal {
+    background-color: white;
+    height: 40%;
+    width: 50%;
+    margin: auto;
+    top: 25%;
+    position: relative;
+    border: 0px solid white;
+    border-radius: 8px;
+    transition-delay: 0ms;
+}
+.overlay.show{
+    opacity: 1;
+    z-index:1;
+}
+.modal-header{
+    height: 20%;
+    width: 100%;
+    background-color: cadetblue;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; 
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.modal-body{
+    width: 100%;
+    padding: 20px;
+    height: 60%;
+}
+.modal-footer{
+    width: 100%;
+    height: 20%;
+    bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.headertxt{
+    font-weight: bold;
+    color: rgb(218, 228, 225);
+    font-size: 30px;
+}
+.add{
+    width: 10%;
+    height: 40%;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+    color: rgb(218, 228, 225);
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cancel{
+    width: 10%;
+    height: 40%;
+    background-color: rgb(137, 151, 151);
+    border: 1px solid rgb(137, 151, 151);
+    border-radius: 4px;
+    color: black;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.add:hover {
+    background-color: darkslategray;
+    cursor: pointer;
+}
+.cancel:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
+.close{
+    font-size: 30px;
+    color: rgb(218, 228, 225);
+    cursor: pointer;
+    margin-right: 10px;
+}
+.text-container > span{
+    color: cadetblue;
+    font-weight: bold;
+}
+.text-container > input{
+    background-color:white;
+    border: 1px solid rgb(186, 203, 204);
+    border-radius: 4px;
+    height: 80%;
+    width: 50%;
+    color: cadetblue;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+}
+.text-container{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+}
+@keyframes movecss{
+    0% {width: 0%}
+    100% {width: 50%}
+}
+@keyframes movejs{
+    0% {width: 0%}
+    100% {width: 80%}
+}
+@keyframes movehtml{
+    0% {width: 0%}
+    100% {width: 70%}
+}
+@keyframes movephp{
+    0% {width: 0%}
+    100% {width: 30%}
+}
+@keyframes movejquery{
+    0% {width: 0%}
+    100% {width: 25%}
+}
+@keyframes openmodal{
+    0% {opacity:0;
+        transform: scale(0.8)}
+    100% { opacity: 1;
+        transform: scale(1)}
+}
+@keyframes closedialog{
+    100% {opacity:0;
+        transform: scale(0.8)}
+    0% { opacity: 1;
+        transform: scale(1)}
+}
