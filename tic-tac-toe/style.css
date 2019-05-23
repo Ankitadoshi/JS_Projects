@@ -1,0 +1,84 @@
+body{
+    background-color: #EEE;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    color: red;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: blue;
+    font-size: 24px;
+}
+input {
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    text-align: right;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+    color: blue;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+label {
+    color: blue;
+    font-size: 16px;
+}
+button{
+    color: white;
+    background-color: cadetblue;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 0px solid cadetblue;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.board{
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.cell{
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+.X{
+    color: red;
+}
+.O{
+    color: blue;
+}
+#outcome {
+    color: green;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.hide{
+    display: none;
+}

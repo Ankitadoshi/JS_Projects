@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <title>Tic tac toe</title>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1><em>Tic Tac Toe</em></h1>
+        <div class="container">
+            <p>Enter the number of cells you want to play with below.</p>
+            <div class="row">
+                    <input class="cells_input" id="cell-input" type="number"></input>
+                    <label for="cell-input">&nbsp&nbspCells</label>
+            </div>
+            
+            <button class="submitBtn">Start Game</button>
+        </div>
+        <div class="board hide">
+        </div>
+        <div id="outcome" class="hide">
+            <h2></h2>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="tic-tac-toe.js"></script>
+    </body>
+</html>
