@@ -1,0 +1,29 @@
+body{
+    
+}
+h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.cell{
+    border: 1px solid grey;
+    background-color: lightgrey;
+    height: 20px;
+    width: 20px;
+    color: white;
+    cursor: pointer;
+}
+.clicked{
+    background-color: black;
+}
+.mine{
+    background-color: red;
+}
+button{
+    justify-content: center;
+}
