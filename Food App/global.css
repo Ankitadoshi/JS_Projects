@@ -1,0 +1,94 @@
+.header{
+    background-color: cadetblue;
+    color: white;
+    text-align:center;
+    height: 20%;
+    width: 100%;
+}
+.favourite_container{
+    height: 50%;
+}
+.favourite{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+.fav_container{
+    margin: 10px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.categories{
+    width: 100%;
+    height: 20%;
+    overflow: scroll;
+}
+.cat_name{
+    width: 40%;
+    height: 20%;
+    color: black;
+    margin-left: 2px;
+}
+.cat-img{
+    height: 30%;
+    width: 40%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.item_container{
+    height: 20%;
+    overflow: scroll;
+    margin-top: 10px;
+}
+.item{
+    margin: 10px;
+    height: 50%;
+
+}
+.item_img{
+    width: 100%;
+    height: 40%;
+}
+.center{
+    align-items: center;
+    justify-content: space-between;
+}
+.cen{
+    align-items: center;
+    justify-content: center;
+}
+.highlight{
+    border-bottom: 1px solid cadetblue;
+}
+.name{
+    font-size: 16px;
+    font-weight: bold;
+}
+.amt{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reorder, .add{
+    background-color: cadetblue;
+    color: white;
+    height: 30%;
+    width: 20%;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+}
+.search{
+    width: 100%;
+}
+.category{
+    height: 100%;
+    width: 80%;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,10 @@
+.favourite_container{
+    display: none;
+}
+img{
+    height: auto;
+    width: auto;
+}
+.hide{
+    display: none;
+}

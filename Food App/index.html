@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="styles/global.css">
+        <link type="text/css" rel="stylesheet" href="styles/mobile.css"  media="screen and (min-width: 320px)"/>
+        <link type="text/css" rel="stylesheet" href="styles/bigscreen.css"  media="screen and (min-width: 600px)"/>
+        <link type="text/css" rel="stylesheet" href="styles/desktopScreen.css"  media="screen and (min-width: 1200px)"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Best Food App</h1>
+        </div>
+        <span>Cart Items: </span><span class="cart_value">0</span></span>
+        <div class="favourite_container">
+            <h2>Favourites</h2>
+            <p>Enjoy what you have been ordering!</p>
+            <div class="favourite"></div>
+        </div>
+        <div class="main_container">
+            <input type="search" class="search"/>
+            <h2>Select Categories</h2>
+            <div class="categories row"></div>
+            <div class="item_container col"></div>
+        </div>
+        <div class="details_page col hide"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="scripts/Controller.js"></script>
+    </body>    
+</html>
