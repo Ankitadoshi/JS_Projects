@@ -1,0 +1,14 @@
+.container{
+    width: 100px;
+    height: 300px;
+    overflow: auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+li{
+    padding: 10px;
+    list-style-type: none;
+}
+li:hover{
+    background-color: #ccc
+}
